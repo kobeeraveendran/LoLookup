@@ -33,3 +33,7 @@
 .navbar-brand {
     float: right;
 }
+
+#region-selector {
+    padding: 10px;
+}
