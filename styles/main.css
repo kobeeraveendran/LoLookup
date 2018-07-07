@@ -13,3 +13,23 @@
         display: block;
     }
 }
+
+#large-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#summoner-search {
+    float: none;
+    min-width: 80px;
+    max-width: 300px
+}
+
+.navbar-header .col-md-6 {
+    margin: 0 auto;
+}
+
+.navbar-brand {
+    float: right;
+}
