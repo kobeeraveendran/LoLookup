@@ -1,18 +1,28 @@
 var submit = document.getElementById("search-name");
-var region_select = document.getElementById('region-selector');
+var region_select = document.getElementById("region-selector");
+var region_label = document.getElementById("region-label");
 var region_key = ""
 var region = "na1"
 var summonerName = ""
+console.log("test");
+// region display
+function setRegion(region_name) {
+    console.log("reached");
+    region_label.innerHTML = region_name;
+}
+document.getElementById("region-na").addEventListener("click", setRegion("NA"));
 
-// regions
-var na = document.getElementById("region-na");
 var euw = document.getElementById("region-euw");
 var eune = document.getElementById("region-eune");
 var br = document.getElementById("region-br");
 var jp = document.getElementById("region-jp");
-var kr = document.getElementById("region-kr")
-// region display
-
+var kr = document.getElementById("region-kr");
+var lan = document.getElementById("region-lan");
+var las = document.getElementById("region-las");
+var oce = document.getElementById("region-oce");
+var tr = document.getElementById("region-tr");
+var ru = document.getElementById("region-ru");
+var pbe = document.getElementById("region-pbe");
 
 // region keys for API call
 if (region == "NA") {

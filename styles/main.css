@@ -45,3 +45,8 @@
 #region-panel {
     margin: 3% 0;
 }
+
+#region-label {
+    font-size: 13px;
+    margin: -5px;
+}
