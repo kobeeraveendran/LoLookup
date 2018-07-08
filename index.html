@@ -88,10 +88,18 @@
             <img id = "large-logo" src = "images/logo-large.png">
             <div id = "summoner-search" class = "container col-sm-6">
                 <div class = "input-group">
-                    <input type = "text" class = "form-control" placeholder = "Enter Summoner Name">
+                    <input id = "summoner-name" type = "text" class = "form-control" placeholder = "Enter Summoner Name">
                     <span class = "input-group-btn">
-                        <button class = "btn btn-primary" type = "button">Search</button>
+                        <button id = "search-name" class = "btn btn-primary" type = "button">Search</button>
                     </span>
+                </div>
+                <div id = "region-panel" class="panel panel-primary">
+                    <div class = "panel-heading">
+                        <h3 class = "panel-title">Region</h3>
+                    </div>
+                    <div id = "region-label" class = "panel-body">
+                        None selected
+                    </div>
                 </div>
             </div> 
         </div>
