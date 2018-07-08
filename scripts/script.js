@@ -1,8 +1,8 @@
 var submit = document.getElementById("search-name");
 var region_select = document.getElementById("region-selector");
 var region_label = document.getElementById("region-label");
-var region_key = ""
-var region = "na1"
+var region_key = "na1"
+var region = "NA"
 var summonerName = ""
 
 // region display
@@ -10,6 +10,7 @@ var summonerName = ""
 document.getElementById("region-list").addEventListener("click", function(e) {
     if (e.target) {
         region_label.innerHTML = e.target.innerHTML;
+        region = e.target.innerHTML;
     }
 });
 
@@ -39,7 +40,6 @@ if (region == "NA") {
 } else if (region == "PBE") {
     region_key = "pbe1";
 }
-
 
 
 submit.addEventListener("click", function() {
